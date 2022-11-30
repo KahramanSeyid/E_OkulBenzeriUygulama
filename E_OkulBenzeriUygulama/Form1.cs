@@ -16,5 +16,19 @@ namespace E_OkulBenzeriUygulama
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FrmOgrNotlar frm = new FrmOgrNotlar();
+            frm.numara=textBox1.Text;
+            frm.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FrmOgretmen fr = new FrmOgretmen();
+            fr.Show();
+            this.Hide();
+        }
     }
 }
